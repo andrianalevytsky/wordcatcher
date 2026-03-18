@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/shell.png?v=1717256809711" />
+
+    <title>Word Catcher</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- word container -->
+    <div id="container"></div>
+    
+    <!-- word buttons -->
+    <wrapper id="question">
+      <button id="how" class="moving">
+        How
+      </button>
+      <button id="do" class="moving">
+        do
+      </button>
+      <button id="you" class="moving">
+        you
+      </button>
+      <button id="hold" class="moving">
+        hold
+      </button>
+      <button id="onto" class="moving">
+        onto
+      </button>
+      <button id="meaning" class="moving">
+        meaning
+      </button>
+      <button id="?" class="moving">
+        ?
+      </button>
+    </wrapper>
+    
+    <wrapper id="story" style="display: none;">    
+      <button class="toggle moving">Do </button>
+      <button class="toggle moving" style="display: none;">you </button>
+      <button class="toggle moving" style="display: none;">collect </button>
+      <button class="toggle moving" style="display: none;">words </button>
+      <button class="toggle moving" style="display: none;">like </button>
+      <button class="toggle moving" style="display: none;">shells </button>
+      <button class="toggle moving" style="display: none;">? </button>    
+      <button class="toggle moving" style="display: none;">Do </button>
+      <button class="toggle moving" style="display: none;">you </button>
+      <button class="toggle moving" style="display: none;">search </button>
+      <button class="toggle moving" style="display: none;">along </button>
+      <button class="toggle moving" style="display: none;">the </button>
+      <button class="toggle moving" style="display: none;">shore </button>
+      <button class="toggle moving" style="display: none;">, </button>
+      <button class="toggle moving" style="display: none;">waiting </button>
+      <button class="toggle moving" style="display: none;">until </button>
+      <button class="toggle moving" style="display: none;">the </button>
+      <button class="toggle moving" style="display: none;">right </button>
+      <button class="toggle moving" style="display: none;">one </button>
+      <button class="toggle moving" style="display: none;">catches </button>
+      <button class="toggle moving" style="display: none;">your </button>
+      <button class="toggle moving" style="display: none;">eye </button>
+      <button class="toggle moving" style="display: none;">? </button>
+      <button class="toggle moving" style="display: none;">Do </button>
+      <button class="toggle moving" style="display: none;">you </button>
+      <button class="toggle moving" style="display: none;">grab </button>
+      <button class="toggle moving" style="display: none;">each </button>
+      <button class="toggle moving" style="display: none;">one </button>
+      <button class="toggle moving" style="display: none;">, </button>
+      <button class="toggle moving" style="display: none;">hands </button>
+      <button class="toggle moving" style="display: none;">full </button>
+      <button class="toggle moving" style="display: none;">, </button>
+      <button class="toggle moving" style="display: none;">inevitably </button>
+      <button class="toggle moving" style="display: none;">dropping </button>
+      <button class="toggle moving" style="display: none;">some </button>
+      <button class="toggle moving" style="display: none;">once </button>
+      <button class="toggle moving" style="display: none;">you </button>
+      <button class="toggle moving" style="display: none;">can </button>
+      <button class="toggle moving" style="display: none;">no </button>
+      <button class="toggle moving" style="display: none;">longer </button>
+      <button class="toggle moving" style="display: none;">hold </button>
+      <button class="toggle moving" style="display: none;">them </button>
+      <button class="toggle moving" style="display: none;">all </button>
+      <button class="toggle moving" style="display: none;">? </button>
+      <button class="toggle moving" style="display: none;">You </button>
+      <button class="toggle moving" style="display: none;">can't </button>
+      <button class="toggle moving" style="display: none;">collect </button>
+      <button class="toggle moving" style="display: none;">every </button>
+      <button class="toggle moving" style="display: none;">shell </button>
+      <button class="toggle moving" style="display: none;">, </button>
+      <button class="toggle moving" style="display: none;">every </button>
+      <button class="toggle moving" style="display: none;">word </button>
+      <button class="toggle moving" style="display: none;">. </button>
+      <button class="toggle moving" style="display: none;">Only </button>
+      <button class="toggle moving" style="display: none;">the </button>
+      <button class="toggle moving" style="display: none;">ones </button>
+      <button class="toggle moving" style="display: none;">that </button>
+      <button class="toggle moving" style="display: none;">wash </button>
+      <button class="toggle moving" style="display: none;">up </button>
+      <button class="toggle moving" style="display: none;">as </button>
+      <button class="toggle moving" style="display: none;">you </button>
+      <button class="toggle moving" style="display: none;">happen </button>
+      <button class="toggle moving" style="display: none;">to </button>
+      <button class="toggle moving" style="display: none;">be </button>
+      <button class="toggle moving" style="display: none;">passing </button>
+      <button class="toggle moving" style="display: none;">by </button>
+      <button class="toggle moving" style="display: none;">. </button>
+      <button class="toggle moving" style="display: none;">I </button>
+      <button class="toggle moving" style="display: none;">wonder </button>
+      <button class="toggle moving" style="display: none;">how </button>
+      <button class="toggle moving" style="display: none;">many </button>
+      <button class="toggle moving" style="display: none;">we </button>
+      <button class="toggle moving" style="display: none;">miss </button>
+      <button class="toggle moving" style="display: none;">. </button>
+      <button class="toggle moving" style="display: none;">Is </button>
+      <button class="toggle moving" style="display: none;">the </button>
+      <button class="toggle moving" style="display: none;">right </button>
+      <button class="toggle moving" style="display: none;">shell </button>
+      <button class="toggle moving" style="display: none;">waiting </button>
+      <button class="toggle moving" style="display: none;">just </button>
+      <button class="toggle moving" style="display: none;">beyond </button>
+      <button class="toggle moving" style="display: none;">reach </button>
+      <button class="toggle moving" style="display: none;">? </button>
+    </wrapper>
+    
+    <!-- shell buttons -->
+    <div id="shells" style="display: none;">
+
+<!--       <button class="moving">Do you collect words like shells? </button> -->
+      <button class="moving image-button" onclick="addImageToContainer('image1')">
+        <img src="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/2-oyster-shells.png?v=1717255575719" alt="How do you hold onto meaning?">
+        </button>
+      <button class="moving image-button" onclick="addImageToContainer('image1')">
+        <img src="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/2-shells.png?v=1717256392094" alt="How do you hold onto meaning?">
+      </button>
+      <button class="moving image-button" onclick="addImageToContainer('image1')">
+        <img src="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/oyster-shell-with-rock.png?v=1717256396349" alt="How do you hold onto meaning?">
+      </button>
+      <button class="moving image-button" onclick="addImageToContainer('image1')">
+        <img src="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/porous-shell.png?v=1717256400528" alt="How do you hold onto meaning?">
+      </button>
+      <button class="moving image-button" onclick="addImageToContainer('image1')">
+        <img src="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/shell-configuration.png?v=1717256404612" alt="How do you hold onto meaning?">
+      </button>
+      <button class="moving image-button" onclick="addImageToContainer('image1')">
+        <img src="https://cdn.glitch.global/c91ef538-a372-4b43-afb4-93d96e9eaa96/shell.png?v=1717256809711" alt="How do you hold onto meaning?">
+      </button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+      <button class="moving"></button>
+    </div>
+    
+  </body>
+</html>
